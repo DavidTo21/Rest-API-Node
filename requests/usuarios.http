@@ -1,0 +1,40 @@
+GET http://localhost:4000/usuarios
+###
+POST http://localhost:4000/usuarios
+Content-Type: application/json
+
+{
+    "Nombre": "JUAN",
+    "Apaterno": "PEREZ",
+    "Amaterno": "GARCIA",
+    "IDPerfil": 2,
+    "Alias": "vOCTGr7pQDhUYT445kz1Zg==",
+    "Contraseña": "pNas8GmmmyEq3pAaVf69bg==",
+    "IDEstatus": 6,
+    "ControlRespMov": 1,
+    "ControlFecha": "2024-01-03"
+}
+###
+GET http://localhost:4000/usuarios/121
+
+###
+DELETE http://localhost:4000/usuarios/120
+
+###
+GET http://localhost:4000/usuarios/count
+
+###
+PUT http://localhost:4000/usuarios/121
+Content-Type: application/json
+
+{
+    "Nombre": "JUAN",
+    "Apaterno": "PEREZ",
+    "Amaterno": "GARCIA",
+    "IDPerfil": 2,
+    "Alias": "vOCTGr7pQDhUYT445kz1Zg==",
+    "Contraseña": "pNas8GmmmyEq3pAaVf69bg==",
+    "IDEstatus": 6,
+    "ControlRespMov": 1,
+    "ControlFecha": "2024-01-04"
+}
